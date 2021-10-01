@@ -31,5 +31,6 @@ def mixto_commit():
         buffer_content = "\n".join(buffer_content)
 
         m.AddCommit(buffer_content, entry_id, f'(Vim) {title}')
+        print("Added commit to Mixto")
     except:
         print("Error while committing buffer")
